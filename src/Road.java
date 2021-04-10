@@ -7,7 +7,7 @@ public class Road {
     private int[] startLocation;
     private int[] endLocation;
     private ArrayList<Car> carsOnRoad = new ArrayList<>();
-    private ArrayList<TrafficLight> lightsOnRoad = new ArrayList<>();
+    private ArrayList<Trafficlight> lightsOnRoad = new ArrayList<>();
     private ArrayList<Road> connectedRoads = new ArrayList<>();
 
     public Road(String id, int speedLimit, int length, int[] startLocation) {
@@ -85,11 +85,11 @@ public class Road {
         this.carsOnRoad = carsOnRoad;
     }
 
-    public ArrayList<TrafficLight> getLightsOnRoad() {
+    public ArrayList<Trafficlight> getLightsOnRoad() {
         return lightsOnRoad;
     }
 
-    public void setLightsOnRoad(ArrayList<TrafficLight> lightsOnRoad) {
+    public void setLightsOnRoad(ArrayList<Trafficlight> lightsOnRoad) {
         this.lightsOnRoad = lightsOnRoad;
     }
 

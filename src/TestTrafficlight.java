@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TestTrafficlight {
     Road road = new Road("0", 1, 5, new int[]{0, 0});
-    TrafficLight light = new TrafficLight("0", road);
+    Trafficlight light = new Trafficlight("0", road);
 
     @Test
     void testOperate() {

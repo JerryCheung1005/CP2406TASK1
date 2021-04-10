@@ -9,7 +9,7 @@ public class Trafficlight {
     private int position;
     private Road roadAttachedTo;
 
-    public TrafficLight(String id, Road road) {
+    public Trafficlight(String id, Road road) {
         this.id = "light_" + id;
         state = RED;
         this.roadAttachedTo = road;

@@ -48,9 +48,9 @@ public class main {
         }
 
         System.out.println("\nTraffic Lights;");
-        ArrayList<TrafficLight> lights = new ArrayList<>();
+        ArrayList<Trafficlight> lights = new ArrayList<>();
         for (int i = 0; i < lightSpawns; i++) {
-            lights.add(new TrafficLight(Integer.toString(i), roads.get(0))); // all created lights will begin on road_0.
+            lights.add(new Trafficlight(Integer.toString(i), roads.get(0))); // all created lights will begin on road_0.
             lights.get(i).printLightStatus();
         }
         System.out.println();
@@ -72,7 +72,7 @@ public class main {
         int speedOfSim = simController.nextInt();
         int carsFinished = 0;
         while (carsFinished < cars.size()) {
-            for (TrafficLight light : lights) {
+            for (Trafficlight light : lights) {
                 light.operate(random.nextInt());
                 light.printLightStatus();
             }
