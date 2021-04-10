@@ -43,7 +43,7 @@ class TestRoad {
 
     @Test
     void getLights() {
-        ArrayList<TrafficLight> expected = new ArrayList<>();
+        ArrayList<Trafficlight> expected = new ArrayList<>();
         assertEquals(expected, road.getLightsOnRoad());
     }
 
